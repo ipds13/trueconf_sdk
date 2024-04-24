@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdk rootProject.ext.compileSdkVersion
+    defaultConfig {
+		minSdkVersion rootProject.ext.minSdkVersion
+		targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    api 'com.trueconf:trueconfsdk:2.2.0.92@aar'
+    api 'com.trueconf:media:2.2.0.92@aar'
+    api 'com.trueconf:jnicore:2.2.0.92@aar'
+    implementation 'com.facebook.react:react-native:+'
+    implementation "androidx.appcompat:appcompat:1.5.0"
+    implementation "com.google.android.material:material:1.6.1"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.leanback:leanback-preference:1.0.0"
+    implementation "androidx.work:work-runtime:2.8.1"
+    implementation "androidx.gridlayout:gridlayout:1.0.0"
+    implementation "androidx.mediarouter:mediarouter:1.3.1"
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.emoji:emoji-bundled:1.1.0'
+    implementation 'de.greenrobot:eventbus:2.4.1'
+}
